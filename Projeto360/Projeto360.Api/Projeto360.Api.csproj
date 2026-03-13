@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto360.Application\Projeto360.Application.csproj" />
+    <ProjectReference Include="..\Projeto360.Dominio\Projeto360.Dominio.csproj" />
+    <ProjectReference Include="..\Projeto360.Repositories\Projeto360.Repositories.csproj" />
+    <ProjectReference Include="..\Projeto360.Services\Projeto360.Services.csproj" />
+  </ItemGroup>
+
+</Project>
