@@ -11,13 +11,11 @@ export function NovoUsuario() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const [tipoUsuario, setTipoUsuario] = useState('')
+  const [tipoUsuario, setTipoUsuario] = useState('') // vai guardar o id como número
 
   const [TiposUsuarios, setTiposUsuarios] = useState([]);
-  //ver quais tipos de usuarios temos disponiveis
-  // vamos fazer um dropdown para o usuario escolher que tipo ela quer ser
 
-  const navigate = useNavigate(); //serve para mover o usuario de rota;
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTiposUsuarios = async () => {
@@ -28,24 +26,21 @@ export function NovoUsuario() {
         console.error('Erro ao buscar tipos de usuários', error)
       }
     }
-
-    fetchTiposUsuarios(); //traz os dados para mostrar
+    fetchTiposUsuarios();
   }, []);
 
-  console.log(TiposUsuarios)
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (isFormValid()) {
-      await UsuarioAPI.criarAsync(nome, email, senha, tipoUsuario);
+      await UsuarioAPI.criarAsync(nome, email, senha, Number(tipoUsuario)); // ✅ converte para número aqui
       navigate('/usuarios')
-    }
-    else {
+    } else {
       alert('Por favor, preencha todos os campos!')
     }
   };
 
   const isFormValid = () => {
-    return nome && email && senha && tipoUsuario; //verificar se os states estao vazios
+    return nome && email && senha && tipoUsuario;
   };
 
   return <>
@@ -91,8 +86,6 @@ export function NovoUsuario() {
               />
             </Form.Group>
 
-
-            {/* Nosso dropbox para tipoId*/}
             <Form.Group controlId="formTipoUsuario" className="mb-3">
               <Form.Label>Tipo de Usuário</Form.Label>
               <Form.Control
@@ -104,11 +97,10 @@ export function NovoUsuario() {
               >
                 <option value="">Selecione o Tipo de Usuário</option>
                 {TiposUsuarios.map((tipo) => (
-                  <option value={tipo.id}>{tipo.nome}</option>
+                  <option key={tipo.id} value={tipo.id}>{tipo.nome}</option> // ✅ key adicionado
                 ))}
               </Form.Control>
             </Form.Group>
-
 
             <Button variant="primary" type="submit" disabled={!isFormValid()}>
               Salvar

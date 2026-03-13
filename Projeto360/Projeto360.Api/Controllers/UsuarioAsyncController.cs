@@ -27,7 +27,8 @@ public class UsuarioAsyncController : ControllerBase
       {
         Nome = usuarioCriar.Nome,
         Email = usuarioCriar.Email,
-        Senha = usuarioCriar.Senha
+        Senha = usuarioCriar.Senha,
+        TipoUsuario = usuarioCriar.TipoUsuario // 👈 adicionar isso
       };
 
       var IdUsuario = await _usuarioAplicao.CriarAsync(usuarioDominio);
@@ -53,7 +54,8 @@ public class UsuarioAsyncController : ControllerBase
       {
         IDUsuario = usuarioDominio.IDUsuario,
         Nome = usuarioDominio.Nome,
-        Email = usuarioDominio.Email
+        Email = usuarioDominio.Email,
+        TipoUsuario = usuarioDominio.TipoUsuario // 👈 faltava isso
       };
 
       return Ok(usuarioResponse);
@@ -75,7 +77,8 @@ public class UsuarioAsyncController : ControllerBase
       {
         IDUsuario = usuarioAtualizar.IDUsuario,
         Nome = usuarioAtualizar.Nome,
-        Email = usuarioAtualizar.Email
+        Email = usuarioAtualizar.Email,
+        TipoUsuario = usuarioAtualizar.TipoUsuario // 👈 faltava isso
       };
 
       await _usuarioAplicao.AtualizarAsync(usuarioDominio);

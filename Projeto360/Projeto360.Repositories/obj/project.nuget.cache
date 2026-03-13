@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cNarYhbhqqw=",
+  "dgSpecHash": "dUeKmMsbBx4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Repositories\\Projeto360.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Repositories\\Projeto360.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nicko\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",

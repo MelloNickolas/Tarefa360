@@ -1,12 +1,12 @@
 import { HTTPClient } from "./client";
 
 const UsuarioAPI = {
-  async obterAsync(usuarioId){
+  async obterAsync(usuarioId) {
     try {
       const response = await HTTPClient.get(`/Usuario/Obter/${usuarioId}`)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao OBTER USUÁRIO: ", error);
       throw error;
     }
@@ -18,7 +18,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.get(`/Usuario/Listar?ativos=${ativos}`)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao LISTAR USUÁRIOS: ", error);
       throw error;
     }
@@ -27,7 +27,7 @@ const UsuarioAPI = {
   async criarAsync(nome, email, senha, tipoUsuarioId) {
     try {
       const usuarioCriar = {
-        TipoUsuarioId: tipoUsuarioId,
+        TipoUsuario: Number(tipoUsuarioId),
         Nome: nome,
         Email: email,
         Senha: senha
@@ -35,7 +35,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.post(`/Usuario/Criar`, usuarioCriar)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao CRIAR USUÁRIO: ", error);
       throw error;
     }
@@ -44,15 +44,15 @@ const UsuarioAPI = {
   async atualizarAsync(id, nome, email, tipoUsuarioId) {
     try {
       const usuarioAtualizar = {
-        TipoUsuarioId: tipoUsuarioId,
-        Id: id,
+        TipoUsuario: Number(tipoUsuarioId), // bate com UsuarioAtualizar.cs
+        IDUsuario: id, // 👈 estava "Id", precisa ser "IDUsuario"
         Nome: nome,
         Email: email
       }
       const response = await HTTPClient.put(`/Usuario/Atualizar`, usuarioAtualizar)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao ATUALIZAR USUÁRIO: ", error);
       throw error;
     }
@@ -63,7 +63,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.delete(`/Usuario/Deletar/${usuarioId}`)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao DELETAR USUÁRIO: ", error);
       throw error;
     }
@@ -74,7 +74,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.get(`/api/Enum/ListarTiposUsuario`)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao LISTAR TIPOS DE USUÁRIO: ", error);
       throw error;
     }
@@ -90,7 +90,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.put(`/Usuario/AtualizarSenha`, usuarioAlterarSenha)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao TROCA: ", error);
       throw error;
     }
@@ -101,7 +101,7 @@ const UsuarioAPI = {
       const response = await HTTPClient.put(`/Usuario/Restaurar/${usuarioId}`)
       return response.data;
     }
-    catch (error){
+    catch (error) {
       console.error("Erro ao RESTAURAR USUÁRIO: ", error);
       throw error;
     }

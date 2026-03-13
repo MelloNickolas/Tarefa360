@@ -76,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Services\\Projeto360.Services.csproj",
+      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Services\\Projeto360.Services.csproj",
       "projectName": "Projeto360.Services",
-      "projectPath": "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Services\\Projeto360.Services.csproj",
+      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Services\\Projeto360.Services.csproj",
       "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Services\\obj\\",
+      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -95,8 +95,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Dominio\\Projeto360.Dominio.csproj": {
-              "projectPath": "C:\\Users\\nicko\\Documents\\Tarefa360\\Projeto360\\Projeto360.Dominio\\Projeto360.Dominio.csproj"
+            "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Dominio\\Projeto360.Dominio.csproj": {
+              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Projeto360\\Projeto360.Dominio\\Projeto360.Dominio.csproj"
             }
           }
         }

@@ -31,6 +31,7 @@ namespace Projeto360.Application
 
       usuarioDominio.Nome = usuario.Nome;
       usuarioDominio.Email = usuario.Email;
+      usuarioDominio.TipoUsuario = usuario.TipoUsuario; // 👈 adicionar
 
       _usuarioRepository.Atualizar(usuarioDominio);
     }
@@ -124,6 +125,7 @@ namespace Projeto360.Application
 
       usuarioDominio.Nome = usuario.Nome;
       usuarioDominio.Email = usuario.Email;
+      usuarioDominio.TipoUsuario = usuario.TipoUsuario; // 👈 adicionar
 
       await _usuarioRepository.AtualizarAsync(usuarioDominio);
     }

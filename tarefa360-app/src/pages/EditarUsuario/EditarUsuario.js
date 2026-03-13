@@ -103,7 +103,7 @@ export function EditarUsuario() {
               >
                 <option value="">Selecione o Tipo de Usuário</option>
                 {TiposUsuarios.map((tipo) => (
-                  <option value={tipo.id}>{tipo.nome}</option>
+                  <option key={tipo.id} value={tipo.id}>{tipo.nome}</option>
                 ))}
               </Form.Control>
             </Form.Group>
