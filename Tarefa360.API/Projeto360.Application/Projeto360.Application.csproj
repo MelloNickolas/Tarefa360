@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto360.Repository\Projeto360.Repository.csproj" />
+    <ProjectReference Include="..\Projeto360.Domain\Projeto360.Domain.csproj" />
+    <ProjectReference Include="..\Projeto360.Services\Projeto360.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.34.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.34.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+</Project>

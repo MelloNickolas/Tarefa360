@@ -1,0 +1,75 @@
+    :root {
+    --cor-laranja: #eb8d3e; /* Laranja mais fiel à imagem */
+    --cor-texto-cinza: #b3b3b3;
+    }
+
+    .pagina_conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20vh;
+        height: 100vh;
+        background-image: url("../../assets/Login-1.png");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Open Sans', sans-serif, 'Segoe UI'; 
+    }
+
+    .forgotPassword-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 480px; /* Aumentei um pouco para o botão ficar mais comprido */
+        padding: 20px;
+    }
+
+    .logo {
+        width: 500px; /* Tamanho proporcional à imagem */
+        margin-bottom: 50px;
+        height: auto;
+
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .input-group input {
+        border: none;
+        border-bottom: 1px solid #d1d1d1; /* Linha bem clarinha */
+        padding: 10px 0;
+        width: 100%;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        color: black;
+        font-weight: 300;
+    }
+
+    /* Efeito ao clicar no input */
+    .input-group input:focus {
+        border-bottom: 1px solid var(--cor-laranja);
+    }
+
+    /* Placeholder simulando o texto da imagem */
+    .input-group input::placeholder {
+        color: var(--cor-texto-cinza);
+        font-weight: 300;
+    }
+
+    /* Botão Entrar */
+    .button_enviar {
+        width: 100% !important;
+        background-color: var(--cor-laranja) !important;
+        border: none !important;
+        color: white !important;
+        padding: 8px !important; /* Padding menor para o botão ficar mais fino */
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        cursor: pointer;
+        border-radius: 4px !important;
+        margin-top: 10px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* Sombra leve que existe na imagem */
+    }

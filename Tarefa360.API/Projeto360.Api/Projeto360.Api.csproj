@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto360.Domain\Projeto360.Domain.csproj" />
+    <ProjectReference Include="..\Projeto360.Repository\Projeto360.Repository.csproj" />
+    <ProjectReference Include="..\Projeto360.Application\Projeto360.Application.csproj" />
+    <ProjectReference Include="..\Projeto360.Services\Projeto360.Services.csproj" />
+  </ItemGroup>
+
+</Project>

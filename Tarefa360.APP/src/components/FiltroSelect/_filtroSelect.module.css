@@ -1,0 +1,32 @@
+
+.filtro_group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline: 10px;
+}
+
+.filtro_group label {
+  font-size: 1rem;
+  color: #221d1d;
+}
+
+.filtro_group select {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #d6d4d4;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: 0.2s;
+  width: 180px;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.filtro_group select:hover {
+  border-color: #666;
+}
+
+.filtro_group select:focus {
+  border-color: #f08830;
+}

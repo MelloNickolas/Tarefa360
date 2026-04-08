@@ -1,0 +1,17 @@
+.pagina-conteudo {
+    /* ocupa toda a parte que tem disponibilidade */
+    width: 100%;
+    height: 100%;
+
+    /* para não ficar colocado no sidebar */
+    padding: 50px;
+}
+
+.btn-submit:disabled {
+  background-color: #e5e5e5 !important;
+  border-color: #e5e5e5 !important;
+  color: #8a8a8a !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}

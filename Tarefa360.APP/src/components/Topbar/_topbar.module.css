@@ -1,0 +1,55 @@
+.topbar-conteudo {
+    background-color: #f1f1f1;
+    position: fixed;
+    /* top 0 - mantém no topo da página */
+    top: 0;
+    bottom: 0;
+
+    width: 80%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+}
+
+.pagina-conteudo {
+    /* conteúdo da pagina começa depois da topbar que está com height 10vh */
+    margin-top: 10vh;
+}
+
+.botao-logout {
+    text-decoration: none;
+    color: #070b3b;
+    font-size: 3.5vh;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 15px;
+
+    &:hover {
+        color: #f08830;
+        opacity: 0.7;
+    }
+}
+
+
+.botao-logout {
+  background: none;
+  border: none;
+  color: #070b3b;
+  font-size: 3.5vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.botao-logout:hover {
+  color: #f08830;
+  opacity: 0.7;
+}

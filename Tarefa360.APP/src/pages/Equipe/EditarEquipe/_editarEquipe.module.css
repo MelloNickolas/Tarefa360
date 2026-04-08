@@ -1,0 +1,142 @@
+.pagina-conteudo {
+  /* ocupa toda a parte que tem disponibilidade */
+  width: 100%;
+  height: 100%;
+
+  /* para não ficar colocado no sidebar */
+  padding: 50px;
+}
+
+
+
+.adicionar-membro {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.adicionar-membro-item {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  & Button {
+    width: 200px;
+  }
+}
+
+.input-busca {
+  width: 400px;
+}
+
+.adicionar-membro-item:first-of-type {
+  flex-direction: column;
+}
+
+.sugestoes {
+  list-style: none;
+  margin-top: 8px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sugestao {
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+  padding: 6px 20px;
+  border: #e7e7e7 solid 1px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #f08830;
+  }
+}
+
+.sugestao-email {
+  font-style: italic;
+}
+
+.botao-adicionar {
+  background-color: #f08830;
+  color: white;
+  border: none;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+
+.tabela {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.tabela th,
+.tabela td {
+  /* a porcentagem é de acordo com a quantidade de colunas */
+  width: 33.33%;
+}
+
+.tabela-body svg {
+  color: #212529;
+
+  font-size: 25px;
+}
+
+th {
+  text-align: left;
+}
+
+thead th:first-child {
+  text-align: left;
+}
+
+thead th:not(:first-child):not(:last-child) {
+  text-align: center;
+}
+
+thead th:last-child {
+  text-align: right;
+}
+
+tbody td:first-child {
+  text-align: left;
+}
+
+tbody td:not(:first-child):not(:last-child) {
+  text-align: center;
+}
+
+tbody td:last-child {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.botao-editar {
+  background: none;
+  border: none;
+}
+
+.botao-editar svg:hover {
+  color: #f08830;
+}
+
+.botao-deletar {
+  border: none;
+  background: none;
+
+  & svg:hover {
+    color: #e4504b;
+  }
+
+
+}

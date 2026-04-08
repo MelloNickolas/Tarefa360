@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Repository\\Projeto360.Repository.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\Projeto360.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\Projeto360.Domain.csproj",
+        "projectName": "Projeto360.Domain",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\Projeto360.Domain.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Repository\\Projeto360.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Repository\\Projeto360.Repository.csproj",
+        "projectName": "Projeto360.Repository",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Repository\\Projeto360.Repository.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\Projeto360.Domain.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\Tarefa360\\Tarefa360.API\\Projeto360.Domain\\Projeto360.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
